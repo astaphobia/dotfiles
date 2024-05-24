@@ -1,0 +1,43 @@
+/** Basic config file **/
+
+@theme "themes/sidetab-nord.rasi"
+
+configuration {
+  show-icons: true;
+  icon-theme: "Papirus";
+  display-drun: "";
+  display-window: "﩯 ";
+  display-combi: "  ";
+  sidebar-mode: true;
+  fullscreen: false;
+  matching: "fuzzy";
+  monitor: "primary";
+}
+
+window {
+	hight: 70%;
+	orientation: vertical;
+}
+
+inputbar {
+	padding: 14px;
+	margin: 10px 10px 14px 10px;
+	expand: false;
+	border-radius: 9px;
+}
+
+listview {
+	cycle: true;
+	dynamic: true;
+	scrollback: true;
+}
+
+mainbox {
+	width: 200px;
+	expand: true;
+	space: 12px;
+	padding: 5px;
+	children: [ inputbar, listview ];
+}
+
+
