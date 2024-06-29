@@ -7,6 +7,11 @@ require("mason-lspconfig").setup({
 		"tsserver", -- typescript
 		"intelephense", -- php
 		"gopls" -- go
+	}, 
+	handlers = {
+		function(server_name)
+			require('lspconfig')[server_name].setup({})
+		end
 	}
 })
-require("lsp.autocmp")
+-- require("lsp.autocmp")
