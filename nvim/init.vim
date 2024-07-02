@@ -1,3 +1,6 @@
+syntax on
+set number
+
 call plug#begin()
 Plug 'wakatime/vim-wakatime'
 
@@ -22,6 +25,10 @@ Plug 'hrsh7th/nvim-cmp'
 
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
+" Formatter
+Plug 'nvimtools/none-ls.nvim'
+Plug 'jay-babu/mason-null-ls.nvim'
+
 call plug#end()
 
 lua require('_init')

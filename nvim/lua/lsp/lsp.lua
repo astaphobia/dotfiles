@@ -1,4 +1,4 @@
-require("mason").setup()
+require("mason").setup({})
 require("mason-lspconfig").setup({
 	ensure_installed = {
 		"typos_lsp",
@@ -6,12 +6,16 @@ require("mason-lspconfig").setup({
 		"jsonls", -- json
 		"tsserver", -- typescript
 		"intelephense", -- php
-		"gopls" -- go
-	}, 
+		"phpactor", -- php
+		"graphql"
+	---	"gopls" -- go
+	},
 	handlers = {
 		function(server_name)
 			require('lspconfig')[server_name].setup({})
 		end
 	}
 })
--- require("lsp.autocmp")
+
+require("lsp.autocmp")
+require("formatter.formatter")
