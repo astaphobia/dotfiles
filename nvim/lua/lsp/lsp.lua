@@ -7,8 +7,8 @@ require("mason-lspconfig").setup({
 		"tsserver", -- typescript
 		"intelephense", -- php
 		"phpactor", -- php
-		"graphql"
-	---	"gopls" -- go
+		"graphql",
+		"gopls" -- go
 	},
 	handlers = {
 		function(server_name)
