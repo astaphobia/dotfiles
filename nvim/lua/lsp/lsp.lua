@@ -19,3 +19,13 @@ require("mason-lspconfig").setup({
 
 require("lsp.autocmp")
 require("formatter.formatter")
+
+-- Enable "go to definition" (gd) capabilities
+vim.keymap.set("n", "<leader>gd", function()
+    vim.lsp.buf.definition()
+end, { desc = "LSP Goto Definition" })
+
+-- Enable "go to references" (gr) capabilities
+vim.keymap.set("n", "<leader>gr", function()
+	vim.lsp.buf.references()
+end, { desc = "LSP Goto References" })
