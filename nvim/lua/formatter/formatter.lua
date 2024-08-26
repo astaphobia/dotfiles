@@ -6,9 +6,11 @@ require("mason-null-ls").setup({
 	"prettier", -- formatter
 	"eslint_d",
 	"pint", -- laravel
+	"php-cs-fixer",
 	"editorconfig-checker",
 	"shfmt",
-
+	"graphql_language_service_cli",
+	"graphql",
     },
     methods = {
 	diagnostics = true,
