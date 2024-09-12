@@ -28,6 +28,8 @@ Plug 'saadparwaiz1/cmp_luasnip'
 " Formatter
 Plug 'nvimtools/none-ls.nvim'
 Plug 'jay-babu/mason-null-ls.nvim'
+" Color schemes
+Plug 'themercorp/themer.lua'
 
 call plug#end()
 
