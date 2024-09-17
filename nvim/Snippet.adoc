@@ -1,0 +1,9 @@
+# Snippet
+
+== Comment and Uncomment
+1. Go to first line target
+2. Press `CTRL + v` to enter Visual Block Mode
+3. Use the arrow keys or J and K to select the lines you want to comment or uncomment
+4. Press `SHIFT + i` to enter Insert Mode at the beginning of the line
+5. Type the character you want to use to comment out the lines, such as a pound sign (#). Or press `x` for uncomment
+6. Press Escape 
