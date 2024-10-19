@@ -11,6 +11,9 @@ require("mason-null-ls").setup({
 	"shfmt",
 	"graphql_language_service_cli",
 	"graphql",
+	"tflint",
+	"tfsec",
+	"hclfmt"
     },
     methods = {
 	diagnostics = true,
