@@ -1,14 +1,20 @@
 require("mason").setup({})
 require("mason-lspconfig").setup({
 	ensure_installed = {
+		"vimls",
 		"typos_lsp",
 		"lua_ls", -- lua
 		"jsonls", -- json
-		"tsserver", -- typescript
+		"ts_ls", -- typescript
 		"intelephense", -- php
 		"phpactor", -- php
 		"graphql",
-		"gopls" -- go
+		"gopls", -- go
+		"terraformls", -- terraform
+		"helm_ls",
+		"yamlls", -- yaml,yml
+		"docker_compose_language_service",
+		"dockerls",
 	},
 	handlers = {
 		function(server_name)
