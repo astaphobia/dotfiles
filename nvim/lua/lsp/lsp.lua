@@ -1,4 +1,12 @@
-require("mason").setup({})
+require("mason").setup({
+	ui = {
+		icons = {
+			package_installed = "✓",
+			package_pending = "➜",
+			package_uninstalled = "✗",
+		},
+	},
+})
 require("mason-lspconfig").setup({
 	ensure_installed = {
 		"vimls",
@@ -8,7 +16,6 @@ require("mason-lspconfig").setup({
 		"ts_ls", -- typescript
 		"intelephense", -- php
 		"phpactor", -- php
-		"graphql",
 		"gopls", -- go
 		"terraformls", -- terraform
 		"helm_ls",

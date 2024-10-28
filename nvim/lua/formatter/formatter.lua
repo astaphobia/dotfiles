@@ -1,7 +1,7 @@
 require("mason-null-ls").setup({
     ensure_installed = {
         -- Opt to list sources here, when available in mason.
-	"stylelua",
+	"luacheck",
 	"prettierd", -- prettier daemon for prettier
 	"prettier", -- formatter
 	"eslint_d",
@@ -10,10 +10,10 @@ require("mason-null-ls").setup({
 	"editorconfig-checker",
 	"shfmt",
 	"graphql_language_service_cli",
-	"graphql",
 	"tflint",
 	"tfsec",
-	"hclfmt"
+	"hclfmt",
+	"golangci-lint",
     },
     methods = {
 	diagnostics = true,
@@ -22,7 +22,7 @@ require("mason-null-ls").setup({
 	completion = true,
 	hover = true,
     },
-    automatic_installation = true,
+    automatic_installation = false,
     handlers  = {}
 })
 
