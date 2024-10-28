@@ -12,10 +12,19 @@ require("themer").setup({
 	langs = {
 		html = true,
 		md = true,
-		lua = true
+		lua = true,
+		tf = true,
+		hcl = true,
+		php = true
+	},
+	plugins = {
+		treesitter = true,
+		telescope = true,
+		lsp = true
 	}
 })
 
+require('color.treesitter')
 -- Require 'nvim-telescope/telescope.nvim' installed
 -- Usage is :Telescope themes
 require("telescope").load_extension("themes")

@@ -29,6 +29,7 @@ Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'nvimtools/none-ls.nvim'
 Plug 'jay-babu/mason-null-ls.nvim'
 " Color schemes
+Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'themercorp/themer.lua'
 
 call plug#end()
