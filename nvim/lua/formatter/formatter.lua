@@ -27,3 +27,5 @@ require("mason-null-ls").setup({
 })
 
 require("formatter.autoformat")
+vim.g.editorconfig = true
+vim.g.EditorConfig_core_mode = 'extermal_command'
