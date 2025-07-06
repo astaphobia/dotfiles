@@ -54,3 +54,5 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
+-- prefer using git when install treesitter module
+require'nvim-treesitter.install'.prefer_git = true
